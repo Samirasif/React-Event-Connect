@@ -1,44 +1,70 @@
 
 const Banner = () => {
-    return (
-        <div className="carousel w-full mt-16">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide4" className="btn btn-circle">❮</a>
-            <a href="#slide2" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide1" className="btn btn-circle">❮</a>
-            <a href="#slide3" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide2" className="btn btn-circle">❮</a>
-            <a href="#slide4" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide4" className="carousel-item relative w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            className="w-full" />
-          <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="#slide3" className="btn btn-circle">❮</a>
-            <a href="#slide1" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
+    return (  
+     <div className="bg-green-950 p-12 ">
+      <div className="ml-20 mt-12 mb-8">
+    <h1 className="text-3xl text-white font-bold mb-2">Find The Right <span className="bg-rose-700 rounded-xl p-1">Professionals</span></h1>
+    <p className="text-white">From weddings to private parties and  corporate <br />events – connect  with experienced planners and <br /> vendors across all event types</p>
+    </div>
+   
+    <div className="grid grid-cols-4 gap-2 mt-6 ml-14 ">
+    <div className="card bg-base-100 w-64 shadow-xl ">
+  <figure className="px-3 pt-2">
+    <img
+      src="/src/assets/stage.jpg"
+      alt=""
+      className="rounded-xl" />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">Wedding Planner</h2>
+    <p><a href="">Top-20 planners available</a></p>
+   
+  </div>
+</div>
+ 
+      <div className="card bg-base-100 w-64 shadow-xl ">
+  <figure className="px-3 pt-2">
+    <img
+      src="/src/assets/Wedding.jpg"
+      alt=""
+      className="rounded-xl" />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">Decorators</h2>
+    <p><a href="">Top-20 planners available</a></p>
+   
+  </div>
+</div>
+      <div className="card bg-base-100 w-64 shadow-xl">
+  <figure className="px-3 pt-2 ">
+    <img
+      src="/src/assets/Camera.jpg"
+      alt=""
+      className="rounded-xl w-72 h-40" />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">Photographers</h2>
+    <p><a href="">Top-20 planners available</a></p>
+   
+  </div>
+</div>
+      <div className="card bg-amber-200 w-64 shadow-xl">
+  <figure className="px-3 pt-2 ">
+    <img
+      src="/src/assets/cooks.jpg"
+      alt="Shoes"
+      className="rounded-xl  w-72 h-40 " />
+  </figure>
+  <div className="card-body items-center text-center">
+    <h2 className="card-title">Caterings</h2>
+    <p><a href="">Top-20 planners available</a></p>
+   
+  </div>
+</div>
+    </div>
+ 
+     </div>
+     
     );
 };
 
