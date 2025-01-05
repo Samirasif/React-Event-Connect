@@ -1,11 +1,20 @@
-import React from 'react';
+import React from "react";
+import Hero from "../Hero/Hero";
+import FindRightOne from "../FindRightOne/FindRightOne";
+import HowItWork from "../HowItWork/HowItWork";
+import FeaturedPost from "../FeaturedPost/FeaturedPost";
+import ContactUs from "../ContactUs/ContactUs";
 
 const Home = () => {
-    return (
-        <div>
-           <h1>This is my Home!!</h1> 
-        </div>
-    );
+  return (
+    <div className="">
+      <Hero />
+      <FindRightOne />
+      <HowItWork />
+      <FeaturedPost />
+      <ContactUs />
+    </div>
+  );
 };
 
 export default Home;
