@@ -5,7 +5,7 @@ import Nav from "../shared/header/Nav";
 
 export default function Root() {
   return (
-    <div className="bg-white">
+    <div className="bg-white flex">
       <Nav />
       <Outlet />
     </div>

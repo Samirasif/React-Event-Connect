@@ -7,11 +7,7 @@ const navLinks = [
   { name: "Find Planners", link: "/find-planners" },
   {
     name: "Services",
-    subLinks: [
-      { name: "Decorator", link: "/services/decorator" },
-      { name: "Photographer", link: "/services/photographer" },
-      { name: "Wedding Planner", link: "/services/wedding-planner" },
-    ],
+    link: "/services",
   },
   { name: "About Us", link: "/about-us" },
 ];
@@ -38,7 +34,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 z-100 bg-blue-300">
+    <header className="w-full fixed top-0 z-100 bg-[#96BB7C]">
       <nav
         ref={navRef}
         className="flex items-center justify-between p-4 w-full   container mx-auto bg-inherit"
