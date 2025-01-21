@@ -1,166 +1,96 @@
-import React from 'react';
+import React from "react";
 
 const Services = () => {
-    return (
-        <div>
-            <section>
-  {/* Container */}
-  <div className="mx-auto w-full px-5 py-16 md:px-10 md:py-24">
-    {/* Component */}
-    <div className="flex flex-col gap-12">
-      {/* Title */}
-      <div className="flex flex-col gap-5">
-        <h3 className="text-2xl font-bold md:text-5xl">Find Your Preferable Services</h3>
-        <p className="text-sm text-[#808080] sm:text-base">With a perfect blend of experience and passion</p>
-      </div>
-      {/* Content */}
-      <div className="grid gap-10 md:gap-12 lg:grid-cols-[max-content_1fr]">
-        {/* Filters */}
-        <div className="mb-4 max-w-none lg:max-w-sm">
-          <form name="wf-form-Filter-2" method="get" className="flex-col gap-6">
-            {/* Filters title */}
-            <div className="mb-6 flex items-center justify-between py-4 [border-bottom:1px_solid_rgb(217,_217,_217)]">
-              
-              <a href="#" className="text-sm">
-                <p>Clear all</p>
-              </a>
-            </div>
-            {/* Search input */}
-            <input type="text" className="mb-10 block h-9 min-h-[44px] w-full rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] bg-[16px_center] bg-no-repeat py-3 pl-11 pr-4 text-sm font-bold text-[#333333] [background-size:18px] [border-bottom:1px_solid_rgb(215,_215,_221)]" placeholder="Search" style={{backgroundImage: 'url("https://assets.website-files.com/6458c625291a94a195e6cf3a/64b7a3a33cd5dc368f46daaa_MagnifyingGlass.svg")'}} />
-            {/* Categories */}
-            <div className="flex flex-col gap-6">
-              <p className="font-semibold">Categories</p>
-              <div className="flex flex-wrap items-center gap-2">
-                <a href="#" className="flex gap-3 rounded-md bg-[#f2f2f7] p-3 font-semibold">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b7a3a33cd5dc368f46daab_design.svg" alt="" className="inline-block" />
-                  <p>Planner</p>
+  // Array of feature objects
+  const features = [
+    {
+      imgSrc: "https://www.svgrepo.com/show/530438/ddos-protection.svg",
+      title: "Powered by ChatGPT",
+      description:
+        "The cutting-edge language model that makes interactions a breeze. With its user-friendly interface, effortlessly tap into the world of AI-generated text.",
+    },
+    {
+      imgSrc: "https://www.svgrepo.com/show/530442/port-detection.svg",
+      title: "Easy to use",
+      description:
+        "Simply input your subject, click the generate button, and the result will appear in seconds just like magick.",
+    },
+    {
+      imgSrc: "https://www.svgrepo.com/show/530444/availability.svg",
+      title: "Custom settings",
+      description:
+        "We offer advanced customization. You can freely combine options like roles, languages, publish, tones, lengths, and formats.",
+    },
+    {
+      imgSrc: "https://www.svgrepo.com/show/530440/machine-vision.svg",
+      title: "Free trial",
+      description:
+        "We offer a free trial service without login. We provide many payment options including pay-as-you-go and subscription.",
+      link: "/pricing",
+    },
+    {
+      imgSrc: "https://www.svgrepo.com/show/530450/page-analysis.svg",
+      title: "90+ templates",
+      description:
+        "We offer many templates covering areas such as writing, education, lifestyle and creativity to inspire your potential.",
+      link: "/templates",
+    },
+    {
+      imgSrc: "https://www.svgrepo.com/show/530453/mail-reception.svg",
+      title: "Use Anywhere",
+      description:
+        "Our product is compatible with multiple platforms including Web, Chrome, Windows and Mac, you can use MagickPen anywhere.",
+      link: "/download",
+    },
+  ];
+
+  return (
+    <div className="bg-gray-200 px-2 py-10">
+      <div id="features" className="mx-auto max-w-6xl">
+        <p className="text-center text-base font-semibold leading-7 text-primary-500">
+          Features
+        </p>
+        <h2 className="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+          Writing has never been so easy
+        </h2>
+        <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">
+          {features.map((feature, index) => (
+            <li key={index} className="rounded-xl bg-white px-6 py-8 shadow-sm">
+              {feature.link ? (
+                <a href={feature.link} className="group">
+                  <img
+                    src={feature.imgSrc}
+                    alt=""
+                    className="mx-auto h-10 w-10"
+                  />
+                  <h3 className="my-3 font-display font-medium group-hover:text-primary-500">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-1.5 text-sm leading-6 text-secondary-500">
+                    {feature.description}
+                  </p>
                 </a>
-                <a href="#" className="flex gap-3 rounded-md bg-[#f2f2f7] p-3 font-semibold">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b7a3a33cd5dc368f46daae_illustration.svg" alt="" className="inline-block" />
-                  <p>Photographer</p>
-                </a>
-                <a href="#" className="flex gap-3 rounded-md bg-[#f2f2f7] p-3 font-semibold">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b7a3a33cd5dc368f46daad_icons.svg" alt="" className="inline-block" />
-                  <p>Decorator</p>
-                </a>
-                <a href="#" className="flex gap-3 rounded-md bg-[#f2f2f7] p-3 font-semibold">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b7a3a33cd5dc368f46daaf_plugins.svg" alt="" className="inline-block" />
-                  <p>Chef's</p>
-                </a>
-                <a href="#" className="flex gap-3 rounded-md bg-[#f2f2f7] p-3 font-semibold">
-                  <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/64b7a3a33cd5dc368f46daac_color%20palette.svg" alt="" className="inline-block" />
-                  <p>Music Arrangements</p>
-                </a>
-              </div>
-            </div>
-            {/* Divider */}
-            {/* <div className="mb-6 mt-6 h-px w-full bg-[#d9d9d9]"></div> */}
-            {/* Rating */}
-            {/* <div className="flex flex-col gap-6">
-              <p className="font-semibold">Rating</p>
-              <div className="flex flex-wrap gap-2 lg:justify-between">
-                <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                  <span>1</span>
-                </div>
-                <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-black text-sm font-semibold text-white">
-                  <span>2</span>
-                </div>
-                <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                  <span>3</span>
-                </div>
-                <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                  <span>4</span>
-                </div>
-                <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                  <span>5</span>
-                </div>
-              </div>
-            </div> */}
-            {/* Divider */}
-            <div className="mb-6 mt-6 h-px w-full bg-[#d9d9d9]"></div>
-            {/* FIlter One */}
-            <div className="flex flex-col gap-6">
-              <div className="flex cursor-pointer items-center justify-between py-4 [border-top:1px_solid_rgba(0,_0,_0,_0)] md:py-0">
-                <p className="font-semibold">FIlter </p>
-                <a href="#" className="inline-block text-sm text-black">
-                  <p>Clear</p>
-                </a>
-              </div>
-              <div className="flex flex-col gap-3">
-                <label className="flex items-center text-sm font-medium">
-                  <div className="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">All</span>
-                </label>
-                <label className="flex items-center text-sm font-medium">
-                  <div className="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Planners</span>
-                </label>
-                <label className="flex items-center text-sm font-medium">
-                  <div className="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Decorators</span>
-                </label>
-                <label className="flex items-center text-sm font-medium">
-                  <div className="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Photographer</span>
-                </label>
-                <label className="flex items-center text-sm font-medium">
-                  <div className="mr-3 h-5 w-5 cursor-pointer rounded-sm border border-solid bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Cook's</span>
-                </label>
-              </div>
-            </div>
-            {/* Divider */}
-            <div className="mb-6 mt-6 h-px w-full bg-[#d9d9d9]"></div>
-            {/* FIlter Two */}
-            <div className="flex flex-col gap-6">
-              <div className="flex cursor-pointer items-center justify-between py-4 [border-top:1px_solid_rgba(0,_0,_0,_0)] md:py-0">
-                <p className="font-semibold">FIlter Two</p>
-                <a href="#" className="inline-block text-sm text-black">
-                  <p>Clear</p>
-                </a>
-              </div>
-              <div className="flex flex-col gap-3">
-                <label className="flex items-center font-medium">
-                  <div className="mr-3 mt-1 h-5 w-5 rounded-full border border-solid border-[#cccccc] bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">All</span>
-                </label>
-                <label className="flex items-center font-medium">
-                  <div className="mr-3 mt-1 h-5 w-5 rounded-full border border-solid border-[#cccccc] bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Option One</span>
-                </label>
-                <label className="flex items-center font-medium">
-                  <div className="mr-3 mt-1 h-5 w-5 rounded-full border border-solid border-[#cccccc] bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Option Two</span>
-                </label>
-                <label className="flex items-center font-medium">
-                  <div className="mr-3 mt-1 h-5 w-5 rounded-full border border-solid border-[#cccccc] bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Option Three</span>
-                </label>
-                <label className="flex items-center font-medium">
-                  <div className="mr-3 mt-1 h-5 w-5 rounded-full border border-solid border-[#cccccc] bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Option Four</span>
-                </label>
-                <label className="flex items-center font-medium">
-                  <div className="mr-3 mt-1 h-5 w-5 rounded-full border border-solid border-[#cccccc] bg-[#f2f2f7]"></div>
-                  <span className="inline-block cursor-pointer" htmlFor="Filter-One-Option-1">Option Five</span>
-                </label>
-              </div>
-            </div>
-          </form>
-        </div>
-        {/* Decor */}
-        <div className="w-full [border-left:1px_solid_rgb(217,_217,_217)]">
-          <div className="h-16 bg-[#cccccc]">
-            <h3>All services</h3>
-          </div>
-        </div>
+              ) : (
+                <>
+                  <img
+                    src={feature.imgSrc}
+                    alt=""
+                    className="mx-auto h-10 w-10"
+                  />
+                  <h3 className="my-3 font-display font-medium">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-1.5 text-sm leading-6 text-secondary-500">
+                    {feature.description}
+                  </p>
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
-  </div>
-</section>
-
-        </div>
-    );
+  );
 };
 
 export default Services;

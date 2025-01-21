@@ -8,18 +8,19 @@ import Home from "./components/Home/Home";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
 import Demo from "./components/Demo/Demo";
-import ViewDetails from "./components/ViewDetails/ViewDetails";
 import Services from "./components/Services/Services";
+import DashboardRoot from "./components/DashboardRoot/DashboardRoot";
 import Dashboard from "./components/Dashboard/Dashboard";
+import Events from "./components/Events/Events";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
+    element: <Root/>,
     children: [
-            {
+      {
         path: "/",
-        element: <Home></Home>,
+        element: <Home/>,
       },
       {
         path: "/signup",
@@ -34,17 +35,25 @@ const router = createBrowserRouter([
         element: <Demo />,
       },
       {
-        path:"/viewdetails",
-        element:<ViewDetails></ViewDetails>,
+        path: "/services",
+        element: <Services />,
       },
-      
-      {
-        path:"/services",
-        element:<Services></Services>,
-      }
-      
     ],
   },
+  {
+    path: "/dashboard",
+    element: <DashboardRoot/>,
+    children: [
+      {
+        path: "/dashboard",
+        element: <Dashboard/>,
+      },
+      {
+        path: "/dashboard/events",
+        element: <Events/>,
+      },
+    ]
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
