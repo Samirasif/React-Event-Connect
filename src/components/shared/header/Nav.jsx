@@ -38,10 +38,10 @@ const Nav = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 z-100 bg-blue-300">
+    <header className="w-full fixed top-0 z-100 bg-teal-700">
       <nav
         ref={navRef}
-        className="flex items-center justify-between p-4 w-full   container mx-auto bg-inherit"
+        className="flex items-center justify-between p-3 w-full   container mx-auto bg-inherit"
       >
         <Logo />
 
@@ -77,9 +77,7 @@ const Nav = () => {
           <button className="text-white border px-4 py-2 rounded-md">
             Contact Us
           </button>
-          <button className="text-white bg-[#96BB7C] px-4 py-2 rounded-md hover:bg-green-500">
-            Login
-          </button>
+         <Link to={"/login"} className="text-white bg-red-400 border px-4 py-2 rounded-md">Login</Link>
         </div>
       </nav>
     </header>

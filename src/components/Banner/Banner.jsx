@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (  
-     <div className="bg-green-950 p-12 ">
+     <div className="bg-sky-950 p-12 ">
       <div className="ml-20 mt-12 mb-8">
     <h1 className="text-3xl text-white font-bold mb-2">Find The Right <span className="bg-rose-700 rounded-xl p-1">Professionals</span></h1>
     <p className="text-white">From weddings to private parties and  corporate <br />events – connect  with experienced planners and <br /> vendors across all event types</p>
@@ -15,8 +15,8 @@ const Banner = () => {
       alt=""
       className="rounded-xl" />
   </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">Wedding Planner</h2>
+  <div className="card-body items-center text-center text-slate-950">
+    <h2 className="card-title ">Wedding Planner</h2>
     <p><a href="">Top-20 planners available</a></p>
    
   </div>
@@ -29,7 +29,7 @@ const Banner = () => {
       alt=""
       className="rounded-xl" />
   </figure>
-  <div className="card-body items-center text-center">
+  <div className="card-body items-center text-center text-slate-950">
     <h2 className="card-title">Decorators</h2>
     <p><a href="">Top-20 planners available</a></p>
    
@@ -42,7 +42,7 @@ const Banner = () => {
       alt=""
       className="rounded-xl w-72 h-40" />
   </figure>
-  <div className="card-body items-center text-center">
+  <div className="card-body items-center text-center text-slate-950">
     <h2 className="card-title">Photographers</h2>
     <p><a href="">Top-20 planners available</a></p>
    
@@ -55,7 +55,7 @@ const Banner = () => {
       alt="Shoes"
       className="rounded-xl  w-72 h-40 " />
   </figure>
-  <div className="card-body items-center text-center">
+  <div className="card-body items-center text-center text-violet-950">
     <h2 className="card-title">Caterings</h2>
     <p><a href="">Top-20 planners available</a></p>
    

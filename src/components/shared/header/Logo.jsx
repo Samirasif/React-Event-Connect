@@ -1,7 +1,7 @@
 import React from "react";
 
 const Logo = () => {
-  return <div className="font-bld text-2xl">Logo</div>;
+  return <div className="font-bld text-2xl">Event-CoNnEcT</div>;
 };
 
 export default Logo;

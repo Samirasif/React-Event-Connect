@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({
     username: "",
-    email: "",
+    
     password: "",
-    confirmPassword: "",
+   
   });
 
   const handleChange = (e) => {
@@ -26,7 +27,7 @@ const Login = () => {
         },
         body: JSON.stringify({
           username: formData.username,
-          email: formData.email,
+          
           password: formData.password,
         }),
       });
@@ -68,7 +69,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label
               htmlFor="email"
               className="block text-gray-700 font-semibold mb-2"
@@ -85,7 +86,7 @@ const Login = () => {
               placeholder="Enter your email"
               required
             />
-          </div>
+          </div> */}
           <div className="mb-4">
             <label
               htmlFor="password"
@@ -104,24 +105,7 @@ const Login = () => {
               required
             />
           </div>
-          <div className="mb-4">
-            <label
-              htmlFor="confirmPassword"
-              className="block text-gray-700 font-semibold mb-2"
-            >
-              Confirm Password
-            </label>
-            <input
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              value={formData.confirmPassword}
-              onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Confirm your password"
-              required
-            />
-          </div>
+         
           <button
             onClick={handleSubmit}
             className="w-full bg-blue-500 text-white py-2 rounded-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
@@ -131,9 +115,11 @@ const Login = () => {
         </form>
         <p className="text-center text-gray-600 mt-4">
           Don't have an account?{" "}
+          <Link to="/Signup">
           <a href="#" className="text-blue-500 font-semibold">
             Sign up
           </a>
+          </Link>
         </p>
       </div>
     </div>

@@ -22,7 +22,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="bg-[#244034] " id="contact">
+    <section className="bg-gray-400 " id="contact">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="mb-4">
           <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -34,11 +34,7 @@ const ContactUs = () => {
         <div className="flex items-stretch justify-center">
           <div className="grid md:grid-cols-2">
             <div className="h-full pr-6">
-              {/* <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
-                scelerisque sagittis ante, ac tincidunt sem venenatis ut.
-              </p> */}
+              
               <ul className="mb-6 md:mb-0">
                 <li className="flex">
                   <div className="flex h-10 w-10 items-center justify-center  bg-[#D6E264]  rounded text-gray-50">
@@ -63,10 +59,10 @@ const ContactUs = () => {
                       Our Address
                     </h3>
                     <p className="text-gray-600 dark:text-slate-400">
-                      1230 Maecenas Street Donec Road
+                      Madani Evenue,Notun Bazar
                     </p>
                     <p className="text-gray-600 dark:text-slate-400">
-                      New York, EEUU
+                      Dhaka,Bangladesh
                     </p>
                   </div>
                 </li>
@@ -195,7 +191,7 @@ const ContactUs = () => {
                 <div className="text-center">
                   <button
                     type="submit"
-                    className="w-full bg-[#96BB7C] rounded-md text-white px-6 py-3 font-xl -md sm:mb-0"
+                    className="w-full bg-green-950 rounded-md text-white px-6 py-3 font-xl -md sm:mb-0"
                   >
                     Send Message
                   </button>

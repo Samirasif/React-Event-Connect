@@ -99,7 +99,7 @@ const Signup = () => {
                 htmlFor="firstName"
                 className="block text-gray-700 font-semibold mb-2"
               >
-                First Name
+                 Name
               </label>
               <input
                 type="text"
@@ -120,7 +120,7 @@ const Signup = () => {
                 htmlFor="lastName"
                 className="block text-gray-700 font-semibold mb-2"
               >
-                Last Name
+                UserName
               </label>
               <input
                 type="text"
@@ -129,7 +129,7 @@ const Signup = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="Enter your last name"
+                placeholder="Enter your UserName"
                 required
               />
               {errors.lastName && (
@@ -230,7 +230,7 @@ const Signup = () => {
             </div>
           </div>
 
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label
               htmlFor="joinAs"
               className="block text-gray-700 font-semibold mb-2"
@@ -252,7 +252,7 @@ const Signup = () => {
             {errors.joinAs && (
               <p className="text-red-500 text-sm mt-2">{errors.joinAs}</p>
             )}
-          </div>
+          </div> */}
 
           <button
             type="submit"
