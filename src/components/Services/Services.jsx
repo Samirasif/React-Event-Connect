@@ -5,39 +5,39 @@ const Services = () => {
   const features = [
     {
       imgSrc: "https://www.svgrepo.com/show/530438/ddos-protection.svg",
-      title: "Powered by ChatGPT",
+      title: "Wedding Events",
       description:
         "The cutting-edge language model that makes interactions a breeze. With its user-friendly interface, effortlessly tap into the world of AI-generated text.",
     },
     {
       imgSrc: "https://www.svgrepo.com/show/530442/port-detection.svg",
-      title: "Easy to use",
+      title: "Birthday Parties",
       description:
         "Simply input your subject, click the generate button, and the result will appear in seconds just like magick.",
     },
     {
       imgSrc: "https://www.svgrepo.com/show/530444/availability.svg",
-      title: "Custom settings",
+      title: "Corporate programs",
       description:
         "We offer advanced customization. You can freely combine options like roles, languages, publish, tones, lengths, and formats.",
     },
     {
       imgSrc: "https://www.svgrepo.com/show/530440/machine-vision.svg",
-      title: "Free trial",
+      title: "Photograpers",
       description:
         "We offer a free trial service without login. We provide many payment options including pay-as-you-go and subscription.",
       link: "/pricing",
     },
     {
       imgSrc: "https://www.svgrepo.com/show/530450/page-analysis.svg",
-      title: "90+ templates",
+      title: "Music Organiser",
       description:
         "We offer many templates covering areas such as writing, education, lifestyle and creativity to inspire your potential.",
       link: "/templates",
     },
     {
       imgSrc: "https://www.svgrepo.com/show/530453/mail-reception.svg",
-      title: "Use Anywhere",
+      title: "See More",
       description:
         "Our product is compatible with multiple platforms including Web, Chrome, Windows and Mac, you can use MagickPen anywhere.",
       link: "/download",
@@ -51,7 +51,7 @@ const Services = () => {
           Features
         </p>
         <h2 className="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-          Writing has never been so easy
+          All Services 
         </h2>
         <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3">
           {features.map((feature, index) => (

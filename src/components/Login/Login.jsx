@@ -45,7 +45,7 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center min-h-screen">
+    <div className="w-full bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center min-h-screen">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Login to your account

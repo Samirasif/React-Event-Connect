@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -36,7 +37,12 @@ const Signup = () => {
 
       const data = await response.json();
       if (data.success === true) {
-        console.log(data)
+        <div className="toast">
+          <div className="alert alert-info">
+            <span>New message arrived.</span>
+          </div>
+        </div>;
+        console.log(data);
       } else {
         console.log(`Error: ${data.message}`);
       }
@@ -46,8 +52,12 @@ const Signup = () => {
     }
   };
 
+  const handleSignup = () => {
+    toast("You have successfully signed up!");
+  };
+
   return (
-    <div className="bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center min-h-screen">
+    <div className="w-full bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center min-h-screen">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Create an Account
@@ -106,7 +116,7 @@ const Signup = () => {
             />
           </div>
 
-         <div className="mb-4">
+          <div className="mb-4">
             <label
               htmlFor="password"
               className="block text-gray-700 font-semibold mb-2"
@@ -125,6 +135,7 @@ const Signup = () => {
           </div>
 
           <button
+            onClick={handleSignup}
             type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded-lg font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
           >
@@ -138,6 +149,7 @@ const Signup = () => {
           </a>
         </p>
       </div>
+      <ToastContainer />
     </div>
   );
 };

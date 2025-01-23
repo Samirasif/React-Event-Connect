@@ -12,15 +12,17 @@ import Services from "./components/Services/Services";
 import DashboardRoot from "./components/DashboardRoot/DashboardRoot";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Events from "./components/Events/Events";
+import ViewDetails from "./components/ViewDetails/ViewDetails";
+import FindPlanners from "./components/FindPlanners/FindPlanners";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
+    element: <Root />,
     children: [
       {
         path: "/",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "/signup",
@@ -30,30 +32,35 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+    
       {
-        path: "/demo",
-        element: <Demo />,
+        path: "/viewdetails",
+        element: <ViewDetails />,
       },
       {
         path: "/services",
         element: <Services />,
       },
+      {
+        path: "/findplanners",
+        element: <FindPlanners />,
+      },
     ],
   },
   {
     path: "/dashboard",
-    element: <DashboardRoot/>,
+    element: <DashboardRoot />,
     children: [
       {
         path: "/dashboard",
-        element: <Dashboard/>,
+        element: <Dashboard />,
       },
       {
         path: "/dashboard/events",
-        element: <Events/>,
+        element: <Events />,
       },
-    ]
-  }
+    ],
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

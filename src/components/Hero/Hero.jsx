@@ -3,14 +3,14 @@ import { Container } from "../Container";
 
 const Hero = () => {
   return (
-    <div className="bg-sky-950 ">
+    <div className="bg-sky-700 ">
       <Container className="flex flex-wrap pt-40 ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             {/* <p className="bg-[#D6E264] rounded-full text-black inline p-3  uppercase">
               Event Management Platform
             </p> */}
-            <h1 className="text-4xl font-bold leading-snug tracking-tight mt-5 text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
+            <h1 className="text-4xl font-bold leading-snug tracking-tight mt-5 text-white lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
               Find Event Managers
             </h1>
             <h1 className="text-4xl font-bold leading-snug tracking-tight text-white lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">

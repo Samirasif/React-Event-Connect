@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (  
-     <div className="bg-sky-950 p-12 ">
+     <div className="bg-sky-800 p-12 ">
       <div className="ml-20 mt-12 mb-8">
     <h1 className="text-3xl text-white font-bold mb-2">Find The Right <span className="bg-rose-700 rounded-xl p-1">Professionals</span></h1>
     <p className="text-white">From weddings to private parties and  corporate <br />events – connect  with experienced planners and <br /> vendors across all event types</p>
