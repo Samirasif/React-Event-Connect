@@ -1,4 +1,5 @@
 import React from "react";
+import FeaturedPost from "../FeaturedPost/FeaturedPost";
 
 const FindPlanners = () => {
   return (
@@ -102,28 +103,8 @@ const FindPlanners = () => {
                   </div>
                 </div>
                 {/* Divider */}
-                <div className="mb-6 mt-6 h-px w-full bg-[#d9d9d9]"></div>
-                {/* Rating */}
-                <div className="flex flex-col gap-6">
-                  <p className="font-semibold">Rating</p>
-                  <div className="flex flex-wrap gap-2 lg:justify-between">
-                    <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                      <span>1</span>
-                    </div>
-                    <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-black text-sm font-semibold text-white">
-                      <span>2</span>
-                    </div>
-                    <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                      <span>3</span>
-                    </div>
-                    <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                      <span>4</span>
-                    </div>
-                    <div className="flex h-9 w-14 cursor-pointer items-center justify-center rounded-md border border-solid border-[#cccccc] bg-[#f2f2f7] text-sm font-semibold">
-                      <span>5</span>
-                    </div>
-                  </div>
-                </div>
+           
+            
                 {/* Divider */}
                 <div className="mb-6 mt-6 h-px w-full bg-[#d9d9d9]"></div>
                 {/* FIlter One */}
@@ -254,7 +235,8 @@ const FindPlanners = () => {
 
             {/* Decor */}
             <div className="w-full [border-left:1px_solid_rgb(217,_217,_217)]">
-              <div className="h-16 bg-[#cccccc]"></div>
+              <FeaturedPost />
+
             </div>
           </div>
         </div>
