@@ -7,7 +7,6 @@ import Root from "./components/Root/Root";
 import Home from "./components/Home/Home";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
-import Demo from "./components/Demo/Demo";
 import Services from "./components/Services/Services";
 import DashboardRoot from "./components/DashboardRoot/DashboardRoot";
 import Dashboard from "./components/Dashboard/Dashboard";
