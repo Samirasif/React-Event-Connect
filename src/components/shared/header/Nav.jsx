@@ -34,7 +34,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="w-full fixed top-0 z-100 bg-[#96BB7C]">
+    <header className="w-full fixed top-0 z-[50000] bg-[#96BB7C]">
       <nav
         ref={navRef}
         className="flex items-center justify-between p-3 w-full   container mx-auto bg-inherit"

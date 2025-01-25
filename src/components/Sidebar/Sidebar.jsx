@@ -3,12 +3,10 @@ import { Link } from "react-router-dom"; // For navigation links
 
 export default function Sidebar() {
   return (
-    <div className="w-56 h-screen bg-[#405189] ] font-poppins fixed left-0 top-0">
-
-      <img className="w-24 h-20 ml-3 mt-2 p-1" src="/src/assets/design-null-photoaidcom-cropped.png" alt="" />
-      
-        <h2 className="p-3 ml-3 mt-2">Menu</h2>
-      
+    <div className="w-64 h-screen bg-gray-800 text-white fixed left-0 top-0">
+      <div className="px-8 py-5">
+        <h2 className="text-2xl font-bold text-white">Dashboard</h2>
+      </div>
       <nav>
         <ul className="space-y-1 p-2">
           <li>

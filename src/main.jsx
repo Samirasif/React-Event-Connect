@@ -11,8 +11,9 @@ import Services from "./components/Services/Services";
 import DashboardRoot from "./components/DashboardRoot/DashboardRoot";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Events from "./components/Events/Events";
-import ViewDetails from "./components/ViewDetails/ViewDetails";
 import FindPlanners from "./components/FindPlanners/FindPlanners";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import RoleBasedRedirect from "./components/RoleBasedRedirect/RoleBasedRedirect";
 
 const router = createBrowserRouter([
   {
@@ -33,21 +34,31 @@ const router = createBrowserRouter([
       },
     
       {
+<<<<<<< HEAD
         path: "/viewdetails",
         element: <ViewDetails />,
+=======
+        path: "/find-planners",
+        element: <FindPlanners />,
+>>>>>>> main
       },
       {
         path: "/services",
         element: <Services />,
       },
+<<<<<<< HEAD
       {
         path: "/findplanners",
         element: <FindPlanners />,
       },
+=======
+
+>>>>>>> main
     ],
   },
   {
     path: "/dashboard",
+<<<<<<< HEAD
     element: <DashboardRoot />,
     children: [
       {
@@ -57,6 +68,47 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/events",
         element: <Events />,
+=======
+    element: (
+      <PrivateRoute redirectTo="/dashboard">
+        <RoleBasedRedirect />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "/dashboard",
+        element: (
+          <PrivateRoute>
+            <DashboardRoot />
+          </PrivateRoute>
+        ),
+        children: [
+          {
+            path: "/dashboard/user",
+            element: (
+              <PrivateRoute>
+                <h2>Hi User</h2>
+              </PrivateRoute>
+            ),
+          },
+          {
+            path: "/dashboard/admin",
+            element: (
+              <PrivateRoute>
+                <h2>Welcome Admin</h2>
+              </PrivateRoute>
+            ),
+          },
+          {
+            path: "/dashboard/admin/events",
+            element: (
+              <PrivateRoute>
+                <Events />
+              </PrivateRoute>
+            ),
+          },
+        ],
+>>>>>>> main
       },
     ],
   },
