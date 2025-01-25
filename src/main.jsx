@@ -34,41 +34,17 @@ const router = createBrowserRouter([
       },
     
       {
-<<<<<<< HEAD
-        path: "/viewdetails",
-        element: <ViewDetails />,
-=======
         path: "/find-planners",
         element: <FindPlanners />,
->>>>>>> main
       },
       {
         path: "/services",
         element: <Services />,
       },
-<<<<<<< HEAD
-      {
-        path: "/findplanners",
-        element: <FindPlanners />,
-      },
-=======
-
->>>>>>> main
     ],
   },
   {
     path: "/dashboard",
-<<<<<<< HEAD
-    element: <DashboardRoot />,
-    children: [
-      {
-        path: "/dashboard",
-        element: <Dashboard />,
-      },
-      {
-        path: "/dashboard/events",
-        element: <Events />,
-=======
     element: (
       <PrivateRoute redirectTo="/dashboard">
         <RoleBasedRedirect />
@@ -108,7 +84,6 @@ const router = createBrowserRouter([
             ),
           },
         ],
->>>>>>> main
       },
     ],
   },
